@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Faculties </title>
+</head>
+<body>
+<h1>Faculties</h1>
+<ul>
+    {% for faculty in faculties %}
+    <li>{{ faculty.name }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'home_view' %}">Bosh sahifaga qaytish</a>
+</body>
+</html>
